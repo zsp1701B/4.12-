@@ -1,0 +1,46 @@
+@import "common.scss";
+@import "_mixin.scss";
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        display: flex;
+        width: 100%;
+        height: px2rem(44px);
+        background: #fafafa;
+        justify-content: space-between;
+        text-align: center;
+        line-height: px2rem(44px);
+        font-size: px2rem(16px);
+        padding: 0 px2rem(20px)
+    }
+    .main {
+        width: 100%;
+        flex: 1;
+        background: #fafafa;
+        display: flex;
+        a {
+            text-align: center;
+            width: 20%;
+            margin: 0 auto;
+            margin-top: px2rem(20px);
+            span {
+                display: block;
+                width: px2rem(45px);
+                height: px2rem(45px);
+                border-radius: 50%;
+                background: #cccc;
+                margin: 0 auto;
+            }
+            .act {
+                background: red;
+            }
+            p {
+                color: black;
+                font-size: px2rem(16px)
+            }
+        }
+    }
+}

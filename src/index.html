@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <i><</i>
+            <span>无连接</span>
+            <i>=</i>
+        </header>
+        <section class="main">
+            <a href="javaScrpit:;">
+                <span class="act"></span>
+                <p>电源</p>
+            </a>
+            <a href="javaScrpit:;">
+                <span></span>
+                <p>电源</p>
+            </a>
+            <a href="javaScrpit:;">
+                <span></span>
+                <p>电源</p>
+            </a>
+            <a href="javaScrpit:;">
+                <span></span>
+                <p>电源</p>
+            </a>
+        </section>
+    </div>
+    <script src="flexible.js"></script>
+    <script>
+        let spn = document.querySelectorAll(".main span");
+        console.log(spn)
+        spn.forEach(function(item) {
+            item.addEventListener("click", function() {
+                item.remove.classList('act')
+            })
+        })
+    </script>
+</body>
+
+</html>
